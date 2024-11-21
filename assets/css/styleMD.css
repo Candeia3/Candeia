@@ -1,0 +1,17 @@
+/* Redimensionando cabeçlho */
+@media (max-width: 800px) {
+    nav ul {
+        gap: 5px;
+    }
+    nav ul li a {
+        font-size: 25px;
+    }
+}
+@media (max-width: 700px) {
+    nav ul {
+        gap: 5px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+}

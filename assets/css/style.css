@@ -1,0 +1,59 @@
+/* IMPORTANDO A LOGO BEBAS NEUE */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* IMPORTANDO A LOGO POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Default */
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue';
+}
+:root {
+    --amarelo1: #FFBC42;
+    --verde1: #6DBF4D;
+    --cinza1: #434343;
+    --cinza2: #1E1E1E;
+    --cinza3: #101010;
+}
+
+/* ========= Cabeçalho ========= */
+header {
+    width: 100%;
+    background-color: var(--cinza2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+header > a {
+    margin-left: 10%;
+}
+.logo_header {
+    width: 150px;
+}
+#menu_toggle {
+    display: none;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+nav ul li a {
+    white-space: nowrap;
+    font-family: 'Bebas Neue';
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+}
+.img_menu {
+    display: none;
+}
