@@ -14,17 +14,20 @@
     <link rel="stylesheet" href="../assets/css/styleMD.css" media="(min-width: 601px)">
     <link rel="stylesheet" href="../assets/css/styleLG.css" media="(min-width: 1025px)">    
     <link rel="shortcut icon" href="../assets/img/Candeia_icone.png" type="image/x-icon">
+    <script src="../assets/js/script.js" defer></script>
 </head>
 <body>
+
+    <!-- ========= CABEÇALHO ========= -->
     <header>
-        <a href="#home"><img src="../assets/img/Candeia_logosfundo.png" alt="Logo Candeia" class="logo_header"></a>
+        <a href="index.html"><img src="../assets/img/Candeia_logosfundo.png" alt="Logo Candeia" class="logo_header"></a>
         <!-- Checkbox para esconder e mostrar menu -->
         <input type="checkbox" id="menu_toggle">
         <nav>
             <ul>
                 <label for="menu_toggle"><span></span><span></span></label>
-                <a href="#home" class="img_menu"><img src="../assets/img/Candeia_logosfundo.png" alt="Logo Candeia"></a>
-                <li><a href="#home">HOME</a></li>
+                <a href="index.html" class="img_menu"><img src="../assets/img/Candeia_logosfundo.png" alt="Logo Candeia"></a>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="coleta.html">COLETA</a></li>
                 <li><a href="descontos.html">DESCONTOS</a></li>
                 <li><a href="infos.html">INFORMAÇÕES</a></li>
@@ -34,8 +37,130 @@
         </nav>
         <!-- menu hamburguer -->
         <label for="menu_toggle" class="menu_btn"><span></span></label>
-    </header>
-    
+    </header> 
+
+    <!-- ========= CORPO ========= -->
+    <main id="login_cadastro">
+        <!-- trocar formulários -->
+        <input type="checkbox" id="consu_parse" class="hidden">
+        <input type="checkbox" id="log_cad" class="hidden">
+        <form>
+            <!-- Consumidor login -->
+            <div id="login_consumidor">
+                <!-- cabeçalho do formulário -->
+                <div class="top_form">
+                    <h2>LOGIN</h2>
+                    <label for="consu_parse">
+                        <img src="../assets/img/trocar_btn.png" alt="botão trocar entre consumidor e parceiro" style="transform: scaleX(-1);">
+                        <p>consumidor</p>
+                    </label>
+                </div>
+                <!-- corpo do formulário -->
+                <label for="email_login_consu">
+                    <p>E-mail</p>
+                    <input type="email" id="email_login_consu" name="email_login_consu" placeholder="Insira seu e-mail...">
+                </label>
+                <label for="senha_login_consu">
+                    <p>Senha</p>
+                    <input type="password" id="senha_login_consu" name="senha_login_consu" placeholder="Insira sua senha...">
+                </label>
+            </div>
+            <!-- Parseiro login -->
+            <div id="login_parseiro">
+                <!-- cabeçalho do formulário -->
+                <div class="top_form">
+                    <h2>LOGIN</h2>
+                    <label for="consu_parse">
+                        <img src="../assets/img/trocar_btn.png" alt="botão trocar entre consumidor e parceiro">
+                        <p>parseiro</p>
+                    </label>
+                </div>
+                <!-- corpo do formulário -->
+                <label for="email_login_parse">
+                    <p>E-mail</p>
+                    <input type="email" id="email_login_parse" name="email_login_parse" placeholder="Insira seu e-mail...">
+                </label>
+                <label for="senha_login_parse">
+                    <p>Senha</p>
+                    <input type="password" id="senha_login_parse" name="senha_login_parse" placeholder="Insira sua senha..."> 
+                </label>
+            </div>
+            <!-- Consumidor cadastro -->
+            <div id="cadastro_consumidor">
+                <!-- cabeçalho do formulário -->
+                <div class="top_form">
+                    <h2>CADASTO</h2>
+                    <label for="consu_parse">
+                        <img src="../assets/img/trocar_btn.png" alt="botão trocar entre consumidor e parceiro" style="transform: scaleX(-1);">
+                        <p>consumidor</p>
+                    </label>
+                </div>
+                <!-- corpo do formulário -->
+                <label for="nome_consu">
+                    <p>Nome</p>
+                    <input type="text" id="nome_consu" name="nome_consu" placeholder="Insira seu nome...">
+                </label>
+                <label for="email_cadastro_consu">
+                    <p>E-mail</p>
+                    <input type="email" id="email_cadastro_consu" name="email_cadastro_consu" placeholder="Insira seu e-mail...">
+                </label>
+                <label for="cpf">
+                    <p>CPF</p>
+                    <input type="text" id="cpf" name="cpf" placeholder="Insira seu CPF...">
+                </label>
+                <label for="senha_cadastro_consu">
+                    <p>Senha</p>
+                    <input type="password" id="senha_cadastro_consu" name="senha_cadastro_consu" placeholder="Insira sua senha...">
+                </label>
+                <label for="confirmarSenha_consu">
+                    <p>Confirmar senha</p>
+                    <input type="password" id="confirmarSenha_consu" name="confirmarSenha_consu" placeholder="Confirme sua senha...">
+                </label>
+            </div>
+            <div id="cadastro_parseiro" >
+                <!-- cabeçalho do formulário -->
+                <div class="top_form">
+                    <h2>CADASTO</h2>
+                    <label for="consu_parse">
+                        <img src="../assets/img/trocar_btn.png" alt="botão trocar entre consumidor e parceiro">
+                        <p>parseiro</p>
+                    </label>
+                </div>
+                <!-- corpo do formulário -->
+                <label for="nome_parse">
+                    <p>Nome</p>
+                    <input type="text" id="nome_parse" name="nome_parse" placeholder="Insira seu nome...">
+                </label>
+                <label for="email_cadastro_perse">
+                    <p>E-mail</p>
+                    <input type="email" id="email_cadastro_perse" name="email_cadastro_perse" placeholder="Insira seu e-mail...">
+                </label>
+                <label for="cnpj">
+                    <p>CNPJ</p>
+                    <input type="text" id="cnpj" name="cnpj" placeholder="Insira seu CNPJ...">
+                </label>
+                <label for="senha_cadastro_parse">
+                    <p>Senha</p>
+                    <input type="password" id="senha_cadastro_parse" name="senha_cadastro_parse" placeholder="Insira sua senha...">
+                </label>
+                <label for="confirmarSenha_parse">
+                    <p>Confirmar senha</p>
+                    <input type="password" id="confirmarSenha_parse" name="confirmarSenha_parse" placeholder="Confirme sua senha...">
+                </label>
+            </div>
+            <label for="manter_logado" class="manter_logado">
+                <p>Manter logado?</p>
+                <input type="checkbox" id="manter_logado">
+            </label>
+            <button>Ação</button>
+            <div class="opcoes">
+                <label for="log_cad" class="clicavel">Não tenho uma conta</label>
+                <a href="coleta.html">Não me logar</a>
+            </div>
+        </form>
+    </main>
+
+    <!-- ========= RODAPÉ ========= -->
     <footer>
         <div class="cols">
             <div class="col1">
@@ -43,7 +168,7 @@
                 <p>Iluminando o caminho para um futuro sustentável por meio da transformação de resíduos em energia limpa.</p>
             </div>
             <div class="col2">
-                <a href="#home">
+                <a href="index.html">
                     <img src="../assets/img/logo_footer.png" alt="logo Candeia">
                 </a>
                 <div class="social_medias">
@@ -61,5 +186,4 @@
         </div>
     </footer>
 </body>
-<script src="../assets/js/script.js"></script>
 </html>

@@ -13,6 +13,9 @@
 .social_medias img {
     width: 30px;
 }
+
+/* ========= LOGIN_CADASTRO ========= */
+
 /* Redimensionando cabeçlho */
 @media (max-width: 800px) {
     nav ul {
