@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Óleo, Energia verde">
+    <meta name="description" content="transforma óleo de cozinha descartado em oportunidade sustentável.">
+    <title>Candeia</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- PASSANDO RESPONSIVIDADE DIRETAMENTE NO LINK -->
+    <link rel="stylesheet" href="../assets/css/styleSM.css" media="(max-width: 600px)">
+    <link rel="stylesheet" href="../assets/css/styleMD.css" media="(min-width: 601px)">
+    <link rel="stylesheet" href="../assets/css/styleLG.css" media="(min-width: 1025px)">    
+    <link rel="shortcut icon" href="../assets/img/Candeia_icone.png" type="image/x-icon">
+    <script src="../assets/js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- ========= CABEÇALHO ========= -->
+    <header>
+        <a href="index.html"><img src="../assets/img/Candeia_logosfundo.png" alt="Logo Candeia" class="logo_header"></a>
+        <!-- Checkbox para esconder e mostrar menu -->
+        <input type="checkbox" id="menu_toggle">
+        <nav>
+            <ul>
+                <label for="menu_toggle"><span></span><span></span></label>
+                <a href="index.html" class="img_menu"><img src="../assets/img/Candeia_logosfundo.png" alt="Logo Candeia"></a>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="coleta.html">COLETA</a></li>
+                <li><a href="descontos.html">DESCONTOS</a></li>
+                <li><a href="infos.html">SAIBA MAIS</a></li>
+                <li><a href="quemSomos.html">QUEM SOMOS</a></li>
+                <li><a href="#perfil">PERFIL</a></li>
+            </ul>
+        </nav>
+        <!-- menu hamburguer -->
+        <label for="menu_toggle" class="menu_btn"><span></span></label>
+    </header> 
+
+    <!-- ========= CORPO ========= -->
+    <main id="perfil">
+       <a nome="perfil"></a>
+       <input type="checkbox" id="editarPerfil" class="hidden">
+       <!-- Modal -->
+       <div class="modal">
+           <div class="editarPerfil">
+                <label for="editarPerfil"><span></span><span></span></label>
+                <label for="alterarNome">
+                    <p>Alterar nome:</p>
+                    <input type="text" id="alterarNome" name="alterarNome" placeholder="Altere seu nome...">
+                </label>
+                <button onclick="alterarNome()"><h3>Confirmar</h3></button><br>
+                <label for="editarPerfil" class="clicavel">Cancelar</label>
+            </div>
+       </div>
+        <!-- wrapper -->
+        <div class="container1">
+                <div class="background"><label for="editarPerfil"><img src="../assets/img/lapis.png" alt="editar perfil"></label></div>
+                <img src="../assets/img/avatar.png" alt="usuário">
+                <h1>Nome do usuário</h1>
+        </div>
+        <div class="container2">
+                <div>
+                    <p>Óleo ofertado: <span class="oleo_ofertado">0000</span>ml</p>
+                    <p>Isso equivale <span class="energia_produzida">0000</span>Wh<br>de energai produzida</p>
+                    <button>CONVERTER EM<br>DESCONTOS</button>
+                </div>
+                <button>Sair da conta</button>
+        </div>
+    </main>
+
+    <!-- ========= RODAPÉ ========= -->
+    <footer>
+        <div class="cols">
+            <div class="col1">
+                <p>Candeia</p>
+                <p>Iluminando o caminho para um futuro sustentável por meio da transformação de resíduos em energia limpa.</p>
+            </div>
+            <div class="col2">
+                <a href="index.html">
+                    <img src="../assets/img/logo_footer.png" alt="logo Candeia">
+                </a>
+                <div class="social_medias">
+                    <a href="https://github.com/Candeia3" target="_blank">
+                        <img src="../assets/img/github_icone_footer.png" alt="icone do github">
+                    </a>
+                    <a href="mailto:projetocandeia3@gmail.com" target="_blank">
+                        <img src="../assets/img/email_icone_footer.png" alt="icone do e-mail">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© copyright 2024 Candeia - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
