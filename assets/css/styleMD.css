@@ -14,7 +14,15 @@
     width: 30px;
 }
 
-/* ========= LOGIN_CADASTRO ========= */
+/* ========= SAIBA MAIS ========= */
+#saibaMais {
+    width: 700px;
+}
+#saibaMais img {
+    width: 500px;
+}
+
+
 
 /* Redimensionando cabeçlho */
 @media (max-width: 800px) {
@@ -23,6 +31,9 @@
     }
     nav ul li a {
         font-size: 25px;
+    }
+    #saibaMais {
+        width: 500px;
     }
 }
 @media (max-width: 700px) {

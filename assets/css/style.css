@@ -223,6 +223,41 @@ body {
     color: var(--amarelo1);
 }
 
+/* ========= SAIBA MAIS ========= */
+#saibaMais {
+    display: flex;
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+}
+#saibaMais h1 {
+    font-size: 40px;;
+}
+#saibaMais div, #saibaMais h1 {
+    margin-bottom: 50px;
+}
+#saibaMais h2 {
+    font-size: 35px;;
+}
+#saibaMais p {
+    text-align: justify;
+}
+#saibaMais img {
+    margin-top: 40px;
+    width: 300px;
+}
+#saibaMais span {
+    color: var(--verde1);
+    font-family: 'Bebas Neue';
+    transform: scale(1.05);
+}
+#saibaMais .vermelho {
+    color: #E63946;
+}
+#saibaMais .amarelo {
+    color: var(--amarelo1);
+}
+
 
 /*========= Footer =========*/
 footer {
