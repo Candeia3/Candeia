@@ -70,12 +70,14 @@ footer {
     display: flex;
 }
 .col1 {
-    width: 300px;
+    width: 250px;
     text-align: justify;
     padding: 20px;
+    font-size: 13px;
 }
 .col1 p:first-child {
     text-align: center;
+    font-size: 18px;
 }
 .col2 {
     width: 200px;
@@ -90,7 +92,12 @@ footer {
     display: flex;
     flex-direction: column;
 }
+.social_medias img {
+    width: 25px;
+}
 .copyright {
     display: flex;
     background-color: var(--cinza3);
+    white-space: nowrap;
+    text-align: center;
 }

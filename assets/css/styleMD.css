@@ -1,3 +1,18 @@
+/* FOOTER */
+.col1 {
+    width: 500px;
+    text-align: justify;
+    padding: 20px;
+}
+.col2 {
+    width: 300px;
+}
+.col2 > a img {
+    width: 150px;
+}
+.social_medias img {
+    width: 30px;
+}
 /* Redimensionando cabeçlho */
 @media (max-width: 800px) {
     nav ul {
