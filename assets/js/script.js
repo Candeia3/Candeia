@@ -27,3 +27,12 @@ rotacao.addEventListener("click", () => {
         button.classList.remove("hover");  
     }, 3000); // 3000ms = 3 segundos
 });
+
+function primeiraVez() {
+    if (localStorage.getItem("logado") == 'true' || sessionStorage.getItem("logado") == 'true') {
+        window.location.href = '../html/coleta.html';
+    }
+    else{
+        window.location.href = '../html/login_cadastro.html';
+    }
+}

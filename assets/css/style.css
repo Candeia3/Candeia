@@ -23,6 +23,16 @@ h1, h2, h3, h4, h5, h6 {
     --cinza2: #1E1E1E;
     --cinza3: #101010;
 }
+a, button {
+    transition: all 0.3s ease-in-out;
+}
+a:hover, button:hover {
+    transform: scale(1.05);
+}
+button:focus, a:focus {
+    outline: 2px solid var(--amarelo);
+    outline-offset: 2px;
+}
 
 /* ========= Cabeçalho ========= */
 header {
@@ -164,6 +174,7 @@ footer {
 .social_medias {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .social_medias img {
     width: 25px;
