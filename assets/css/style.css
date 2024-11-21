@@ -58,12 +58,85 @@ nav ul li a {
     display: none;
 }
 
-/* Footer */
+/* Corpo */
+body {
+    background-color: var(--cinza1)
+}
+
+
+/* ========= Home ========= */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 0;
+    margin-bottom: 100px;
+}
+#home div img {
+    position: absolute;
+    left: 65%;
+    top: -70px;
+}
+#home p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 200px;
+    white-space: nowrap;
+}
+#rotacao {
+    rotate: 20deg;
+    transition: 0.5s;
+    overflow: visible;
+    cursor: pointer;
+}
+#home button {
+    background-color: var(--amarelo1);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#home .hover {
+    color: #fff;
+    box-shadow: 0 0 15px 5px rgba(255, 188, 66, 0.7);
+    transition: 0.5s;
+}
+/* animação da gota pingando */
+@keyframes deslocarSumir {
+    0% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+    50% {
+        transform: translateY(100px); 
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(100px); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 0; 
+    }
+}
+#gota_animada {
+    animation: deslocarSumir 3s infinite; 
+    position: absolute;
+    top: 320px;
+    left: calc(50% + 150px);
+}
+.hidden {
+    display: none;
+}
+
+
+/*========= Footer =========*/
 footer {
     background-color: var(--cinza2);
     color: #fff;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 .cols {
