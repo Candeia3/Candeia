@@ -57,3 +57,40 @@ nav ul li a {
 .img_menu {
     display: none;
 }
+
+/* Footer */
+footer {
+    background-color: var(--cinza2);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.cols {
+    display: flex;
+}
+.col1 {
+    width: 300px;
+    text-align: justify;
+    padding: 20px;
+}
+.col1 p:first-child {
+    text-align: center;
+}
+.col2 {
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.col2 > a img {
+    width: 120px;
+}
+.social_medias {
+    display: flex;
+    flex-direction: column;
+}
+.copyright {
+    display: flex;
+    background-color: var(--cinza3);
+}
