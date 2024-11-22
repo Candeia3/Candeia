@@ -22,7 +22,16 @@
     width: 500px;
 }
 
-
+/* ========= Descontos ========= */
+#descontos .ofertas {   
+    display: flex;
+    flex-wrap: wrap; 
+}
+#descontos .oferta {
+    width: 50%;
+    border-left: 3px solid #707070;
+    display: block;
+}
 
 /* Redimensionando cabeçlho */
 @media (max-width: 800px) {

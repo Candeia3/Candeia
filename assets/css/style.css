@@ -12,6 +12,7 @@
     text-decoration: none;
     list-style-type: none;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue';
@@ -378,14 +379,16 @@ body {
 }
 #descontos h2 {
     font-family: 'Poppins';
+    font-size: 30px;
 }
 #descontos span {
     font-weight: 600;
-    transform: scale(1.05);
+    font-size: 35px;
     color: var(--verde1);
 }
 #descontos .ofertas {
     width: 100%;
+    margin-top: 100px;
 }
 #descontos .oferta {
     width: 100%;

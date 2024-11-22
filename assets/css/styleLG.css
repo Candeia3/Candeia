@@ -30,6 +30,12 @@ nav ul {
     margin: 100px auto;
 }
 
+/* ========= Descontos ========= */
+#descontos .oferta {
+    display: flex;
+    padding: 30px 0;
+}
+
 /* ========= Quem Somos ========= */
 #quemSomos {
     display: flex;
