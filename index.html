@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="óleo sustentável, reciclagem de óleo, energia limpa, sustentabilidade, descarte responsável">
     <meta name="description" content="transforma óleo de cozinha descartado em oportunidade sustentável.">
-    <base href="/">
     <title>Candeia</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- PASSANDO RESPONSIVIDADE DIRETAMENTE NO LINK -->
@@ -114,9 +113,9 @@
 
     function primeiraVez() {
         if (localStorage.getItem("logado") == 'true' || sessionStorage.getItem("logado") == 'true') {
-            window.location.href = window.location.origin + '/html/coleta.html';
+            window.location.href = 'html/coleta.html';
         } else {
-            window.location.href = window.location.origin + '/html/login_cadastro.html';
+            window.location.href = 'html/login_cadastro.html';
         }
     }
 </script>
