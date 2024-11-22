@@ -148,6 +148,9 @@ body {
 #login_cadastro {
     display: flex;
 }
+#login_cadastro .erro {
+    text-align: center;
+}
 #login_cadastro .logologin {
     display: none;
 }

@@ -63,10 +63,12 @@
                     <p>E-mail</p>
                     <input type="email" id="email_login_consu" name="email_login_consu" placeholder="Insira seu e-mail...">
                 </label>
+                <div id="erroemail_login_consu" class="erro"></div>
                 <label for="senha_login_consu">
                     <p>Senha</p>
                     <input type="password" id="senha_login_consu" name="senha_login_consu" placeholder="Insira sua senha...">
                 </label>
+                <div id="errosenha_login_consu" class="erro"></div>
             </div>
             <!-- Parseiro login -->
             <div id="login_parseiro">
@@ -83,10 +85,12 @@
                     <p>E-mail</p>
                     <input type="email" id="email_login_parse" name="email_login_parse" placeholder="Insira seu e-mail...">
                 </label>
+                <div id="erroemail_login_parse" class="erro"></div>
                 <label for="senha_login_parse">
                     <p>Senha</p>
                     <input type="password" id="senha_login_parse" name="senha_login_parse" placeholder="Insira sua senha..."> 
                 </label>
+                <div id="errosenha_login_parse" class="erro"></div>
             </div>
             <!-- Consumidor cadastro -->
             <div id="cadastro_consumidor">
@@ -103,22 +107,27 @@
                     <p>Nome</p>
                     <input type="text" id="nome_consu" name="nome_consu" placeholder="Insira seu nome...">
                 </label>
+                <div id="erronome_consu" class="erro"></div>
                 <label for="email_cadastro_consu">
                     <p>E-mail</p>
                     <input type="email" id="email_cadastro_consu" name="email_cadastro_consu" placeholder="Insira seu e-mail...">
                 </label>
+                <div id="erroemail_cadastro_consu" class="erro"></div>
                 <label for="cpf">
                     <p>CPF</p>
                     <input type="text" id="cpf" name="cpf" placeholder="Insira seu CPF...">
                 </label>
+                <div id="errocpf" class="erro"></div>
                 <label for="senha_cadastro_consu">
                     <p>Senha</p>
                     <input type="password" id="senha_cadastro_consu" name="senha_cadastro_consu" placeholder="Insira sua senha...">
                 </label>
+                <div id="errosenha_cadastro_consu" class="erro"></div>
                 <label for="confirmarSenha_consu">
                     <p>Confirmar senha</p>
                     <input type="password" id="confirmarSenha_consu" name="confirmarSenha_consu" placeholder="Confirme sua senha...">
                 </label>
+                <div id="erroconfirmarSenha_consu" class="erro"></div>
             </div>
             <div id="cadastro_parseiro" >
                 <!-- cabeçalho do formulário -->
@@ -134,28 +143,35 @@
                     <p>Nome</p>
                     <input type="text" id="nome_parse" name="nome_parse" placeholder="Insira seu nome...">
                 </label>
+                <div id="erronome_parse" class="erro"></div>
                 <label for="email_cadastro_perse">
                     <p>E-mail</p>
                     <input type="email" id="email_cadastro_perse" name="email_cadastro_perse" placeholder="Insira seu e-mail...">
                 </label>
+                <div id="erroemail_cadastro_parse" class="erro"></div>
                 <label for="cnpj">
                     <p>CNPJ</p>
                     <input type="text" id="cnpj" name="cnpj" placeholder="Insira seu CNPJ...">
                 </label>
+                <div id="errocnpj" class="erro"></div>
                 <label for="senha_cadastro_parse">
                     <p>Senha</p>
                     <input type="password" id="senha_cadastro_parse" name="senha_cadastro_parse" placeholder="Insira sua senha...">
                 </label>
+                <div id="errosenha_cadastro_parse" class="erro"></div>
                 <label for="confirmarSenha_parse">
                     <p>Confirmar senha</p>
                     <input type="password" id="confirmarSenha_parse" name="confirmarSenha_parse" placeholder="Confirme sua senha...">
                 </label>
+                <div id="erroconfirmarSenha_parse" class="erro"></div>
             </div>
             <label for="manter_logado" class="manter_logado">
                 <p>Manter logado?</p>
                 <input type="checkbox" id="manter_logado">
             </label>
-            <button id="btn">Ação</button>
+            <div id="erro" class="erro"></div>
+            <button type="button" onclick="validarLogin()" id="btnLogin">LOGAR</button>
+            <button type="button" onclick="validarCadastro()" id="btnCadastro">CADASTRAR</button>
             <div class="opcoes">
                 <label for="log_cad" class="clicavel">Não tenho uma conta</label>
                 <a href="coleta.html">Não me logar</a>
