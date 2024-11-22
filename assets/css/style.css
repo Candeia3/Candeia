@@ -422,6 +422,35 @@ body {
 }
 
 
+/* ========= Coleta ========= */
+#coleta {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+    color: #fff;
+}
+#coleta iframe {
+    width: 90%;
+    padding: 0 5%;
+    margin: 50px auto;
+}
+#coleta .parceiro {
+    display: flex;
+    margin: 20px;
+}
+#coleta .parceiro h3 {
+    font-size: 30px;
+}
+#coleta h2 {
+    text-align: center;
+    margin: 50px;
+    font-family: 'Poppins';
+}
+#coleta span {
+    color: var(--amarelo1);
+    font-weight: 600;
+}
+
 
 /* ========= SAIBA MAIS ========= */
 #saibaMais {
