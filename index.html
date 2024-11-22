@@ -113,9 +113,9 @@
 
     function primeiraVez() {
         if (localStorage.getItem("logado") == 'true' || sessionStorage.getItem("logado") == 'true') {
-            window.location.href = 'html/coleta.html';
+            window.location.href = window.location.origin + '/html/coleta.html';
         } else {
-            window.location.href = 'html/login_cadastro.html';
+            window.location.href = window.location.origin + '/html/login_cadastro.html';
         }
     }
 </script>

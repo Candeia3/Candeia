@@ -83,7 +83,7 @@ if (window.location.pathname.includes('login_cadastro.html')) {
                     }else {
                         sessionStorage.setItem('logado','true');
                     }
-                    window.location.href = 'coleta.html';
+                    window.location.href = window.location.origin + '/html/coleta.html';
                 }else {
                     erro.innerText = "Email e/ou senha incorretos!"
                     senha.focus();
@@ -159,7 +159,7 @@ if (window.location.pathname.includes('login_cadastro.html')) {
                                 localStorage.setItem('email', email.value);
                                 localStorage.setItem('cnpj_cpf', cnpj_cpf.value);
                                 localStorage.setItem('senha', senha.value);
-                                window.location.href = 'coleta.html';
+                                window.location.href = window.location.origin + '/html/coleta.html';
                             }
                         }
                     }
@@ -172,14 +172,14 @@ if (window.location.pathname.includes('login_cadastro.html')) {
 /* ========= Perfil ========= */
 if (window.location.pathname.includes('perfil.html')) {
     if (localStorage.getItem('logado') != 'true' && sessionStorage.getItem('logado') != 'true') {
-        window.location.href = 'login_cadastro.html';
+        window.location.href = window.location.origin + '/html/login_cadastro.html';
         sessionStorage.setItem('msgErro', '1');
     }
     else {
         sessionStorage.setItem('msgErro', '0');
     }
     function trocarPontos() {
-        window.location.href = '../../html/descontos.html';
+        window.location.href = window.location.origin + '/html/descontos.html';
     }
     var nomeUsuario = document.getElementById('nomeUsuario');
     nomeUsuario.innerText = localStorage.getItem('nome') || 'Nome do Usuário';
@@ -200,7 +200,7 @@ if (window.location.pathname.includes('perfil.html')) {
         localStorage.removeItem('senha');
         localStorage.removeItem('logado');
         sessionStorage.removeItem('logado');
-        window.location.href = 'login_cadastro.html';
+        window.location.href = window.location.origin + '/html/login_cadastro.html';
     }
 }
 
