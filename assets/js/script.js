@@ -81,3 +81,10 @@ if (window.location.pathname.includes('login_cadastro.html')) {
     tipoUsuario.addEventListener("change", atualizarVisibilidade);
     tipoSessao.addEventListener("change", atualizarVisibilidade);
 }
+
+/* ========= Perfil ========= */
+if (window.location.pathname.includes('perfil.html')) {
+    function trocarPontos() {
+        window.location.href = '../html/descontos.html';
+    }
+}

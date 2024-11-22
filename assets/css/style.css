@@ -364,6 +364,65 @@ body {
 }
 
 
+/* ========= DESCONTOS ========= */
+#descontos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0;
+    gap: 50px;
+    color: #fff;
+}
+#descontos h2 {
+    font-family: 'Poppins';
+}
+#descontos span {
+    font-weight: 600;
+    transform: scale(1.05);
+    color: var(--verde1);
+}
+#descontos .ofertas {
+    width: 100%;
+}
+#descontos .oferta {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cinza2);
+    border-bottom: 3px solid #707070;
+}
+#descontos .oferta div {
+    padding: 20px;
+    overflow: visible;
+}
+#descontos .sobreEmpresa {
+    font-size: 25px;
+}
+#descontos .sobreEmpresa p {
+    font-size: 16px;
+}
+#descontos .oferta div:last-child span {
+    color: #fff;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+}
+#descontos .oferta div:last-child button {
+    background-color: var(--verde1);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Bebas Neue';
+}
+#descontos .oferta div:last-child button:hover {
+    color: #fff;
+    color: #fff;
+    box-shadow: 0 0 15px 5px rgba(109, 191, 77, 0.7);
+    transition: 0.5s;
+}
+
+
+
 /* ========= SAIBA MAIS ========= */
 #saibaMais {
     display: flex;
