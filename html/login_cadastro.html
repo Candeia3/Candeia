@@ -205,4 +205,129 @@
         </div>
     </footer>
 </body>
+<!-- Script local para não quebrar no github pages -->
+<script>
+    /* Validação de usuário */
+    var erro = document.getElementById('erro');
+    var manterLogado = document.getElementById('manter_logado');
+    if (sessionStorage.getItem('msgErro') == '1') {
+        erro.innerText = 'Realize o login para acessar o perfil';
+    }
+    function validarLogin() {
+        if (tipoUsuario.checked) {
+            var email = document.getElementById('email_login_parse');
+            var senha = document.getElementById('senha_login_parse');
+            var erroEmail = document.getElementById('erroemail_login_parse');
+            var erroSenha = document.getElementById('errosenha_login_parse');
+        }else {
+            var email = document.getElementById('email_login_consu');
+            var senha = document.getElementById('senha_login_consu');
+            var erroEmail = document.getElementById('erroemail_login_consu');
+            var erroSenha = document.getElementById('errosenha_login_consu');
+        }
+        sessionStorage.setItem('msgErro','0');
+        erro.innerText = '';
+
+        if (email.value == '') {
+            erro.innerText = '';
+            erroEmail.innerText = 'Campo "e-mail" obrigatório';
+            email.focus();
+        }else {
+            erroEmail.innerText = ""
+            if(senha.value == ''){
+                erroSenha.innerText = 'Campo "Senha" obrigatório';
+                senha.focus();
+            }else {
+                erroSenha.innerText = ""
+                if(email.value == localStorage.getItem('email') && senha.value == localStorage.getItem('senha')) {
+                    if(manterLogado.checked) {
+                        localStorage.setItem('logado','true');
+                    }else {
+                        sessionStorage.setItem('logado','true');
+                    }
+                    window.location.href = 'coleta.html';
+                }else {
+                    erro.innerText = "Email e/ou senha incorretos!"
+                    senha.focus();
+                }
+            }
+        }
+    }
+    function validarCadastro() {
+        if (tipoUsuario.checked) {
+            var nome = document.getElementById('nome_parse');
+            var email = document.getElementById('email_cadastro_parse');
+            var cnpj_cpf = document.getElementById('cnpj');
+            var senha = document.getElementById('senha_cadastro_parse');
+            var confirmarSenha = document.getElementById('confirmarSenha_parse');
+            var erroNome = document.getElementById('erronome_parse');
+            var erroEmail = document.getElementById('erroemail_cadastro_parse');
+            var erroCnpj_Cpf = document.getElementById('errocnpj');
+            var erroSenha = document.getElementById('errosenha_cadastro_parse');
+            var erroConfirmarSenha = document.getElementById('erroconfirmarSenha_parse');
+        }else {
+            var nome = document.getElementById('nome_consu');
+            var email = document.getElementById('email_cadastro_consu');
+            var cnpj_cpf = document.getElementById('cpf');
+            var senha = document.getElementById('senha_cadastro_consu');
+            var confirmarSenha = document.getElementById('confirmarSenha_consu');
+            var erroNome = document.getElementById('erronome_consu');
+            var erroEmail = document.getElementById('erroemail_cadastro_consu');
+            var erroCnpj_Cpf = document.getElementById('errocpf');
+            var erroSenha = document.getElementById('errosenha_cadastro_consu');
+            var erroConfirmarSenha = document.getElementById('erroconfirmarSenha_consu');
+        }
+        
+        sessionStorage.setItem('msgErro','0');
+        erro.innerText = '';
+        
+        if (nome.value == ''){
+            erro.innerText = '';
+            erroNome.innerText = 'Campo "nome" obrigatório';
+            nome.focus();
+        }else {
+            erroNome.innerText = '';
+            if (email.value == ''){
+                erroEmail.innerText = 'Campo "e-mail" obrigatório';
+                email.focus();
+            }else {
+                erroEmail.innerText = "";
+                if (cnpj_cpf.value == '') {
+                    erroCnpj_Cpf.innerText = 'Campo "CPF/CNPJ" obrigatório';
+                    cnpj_cpf.focus();
+                } else {
+                    erroCnpj_Cpf.innerText = "";
+                    if(senha.value == ''){
+                        erroSenha.innerText = 'Campo "Senha" obrigatório';
+                        senha.focus();
+                    }else {
+                        erroSenha.innerText = "";
+                        if(confirmarSenha.value == ''){
+                            erroConfirmarSenha.innerText = 'Confirme sua senha ';
+                            confirmarSenha.focus();
+                        }else {
+                            erroConfirmarSenha.innerText = "";
+                            if (senha.value != confirmarSenha.value){
+                                erroConfirmarSenha.innerText = 'Senhas não conferem';
+                                confirmarSenha.focus();
+                            }else {
+                                erroConfirmarSenha.innerText = '';
+                                if(manterLogado.checked){
+                                    localStorage.setItem('logado','true');
+                                }else {
+                                    sessionStorage.setItem('logado','true');
+                                }
+                                localStorage.setItem('nome', nome.value);
+                                localStorage.setItem('email', email.value);
+                                localStorage.setItem('cnpj_cpf', cnpj_cpf.value);
+                                localStorage.setItem('senha', senha.value);
+                                window.location.href = 'coleta.html';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>
 </html>

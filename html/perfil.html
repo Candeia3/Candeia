@@ -15,6 +15,16 @@
     <link rel="stylesheet" href="../assets/css/styleLG.css" media="(min-width: 1025px)">    
     <link rel="shortcut icon" href="../assets/img/Candeia_icone.png" type="image/x-icon">
     <script src="../assets/js/script.js" defer></script>
+    <!-- Script local para não quebrar no github pages -->
+     <script>
+        if (localStorage.getItem('logado') != 'true' && sessionStorage.getItem('logado') != 'true') {
+            window.location.href = 'login_cadastro.html';
+            sessionStorage.setItem('msgErro', '1');
+        }
+        else {
+            sessionStorage.setItem('msgErro', '0');
+        }
+     </script>
 </head>
 <body>
 
@@ -97,4 +107,19 @@
         </div>
     </footer>
 </body>
+<!-- Script local para não quebrar no github pages -->
+ <script>
+    function trocarPontos() {
+        window.location.href = 'descontos.html';
+    }
+    function sairConta() {
+        localStorage.removeItem('nome');
+        localStorage.removeItem('email');
+        localStorage.removeItem('cnpj_cpf');
+        localStorage.removeItem('senha');
+        localStorage.removeItem('logado');
+        sessionStorage.removeItem('logado');
+        window.location.href = 'login_cadastro.html';
+    }
+ </script>
 </html>
