@@ -98,3 +98,19 @@ nav li div{
     content: '';
     bottom: 7px; 
 }
+
+/* ========= Quem Somos ========= */
+#quemSomos .membro {
+    display: flex;
+    gap: 0px;
+    margin-bottom: 20px;
+}
+#quemSomos .membro div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+#quemSomos .cabos {
+    gap: 78px;
+    top: 418px;
+    width: 390px;
+}

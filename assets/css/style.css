@@ -218,6 +218,7 @@ body {
     margin-bottom: 20px;
     color: var(--amarelo1);
     text-decoration: underline;
+    overflow: hidden;
 }
 #login_cadastro .opcoes a {
     color: var(--amarelo1);
@@ -541,6 +542,9 @@ body {
     text-align: center;
     padding: 100px 0;
 }
+#quemSomos .membros {
+    overflow: visible;
+}
 #quemSomos .membros h1 {
     font-size: 35px;
     color: var(--verde1);
@@ -551,24 +555,79 @@ body {
     margin-bottom: 50px;
 }
 #quemSomos .membro {
+    position: relative;
     display: flex;
-    gap: 50px;
+    gap: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+#quemSomos .membro h3 {
+    font-size: 30px;
+    color: var(--cinza3);
+}
+#quemSomos .membro p {
+    font-size: 20px;
+    color: var(--cinza2);
+}
+#quemSomos .membro a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--cinza2);
+    margin-left: 10px;
 }
 #quemSomos .cabos {
     display: flex;
     flex-direction: column;
-    gap: 57px;
+    gap: 50px;
     position: absolute;
-    top: 420px;
-    width: 600px;
+    top: 393px;
+    width: 560px;
     left: 50%;
     transform: translateX(-50%);
 }
 #quemSomos .cabos div, 
-#quemSomos .cabos img:first-child {
-    width: 90%;
+#quemSomos .cabos img {
+    width: 100%;
 }
-
+#quemSomos .projeto h2 {
+    font-size: 30px;
+    color: var(--verde1);
+    margin-top: 100px;
+}
+#quemSomos .projeto p {
+    font-size: 18px;
+    text-align: justify;
+    color: #fff;
+    padding: 0 30px;
+    margin-bottom: 100px;
+}
+#quemSomos .projeto a {
+    text-decoration: underline;
+    font-size: 18px;
+    text-align: justify;
+    color: #fff;
+}
+/* animação */
+#quemSomos .aceso, 
+#quemSomos .aceso div {
+    overflow: visible;
+}
+#quemSomos .aceso div:first-child img {
+    border-radius: 10px;
+    box-shadow: 0 0 15px 10px rgba(255, 188, 66, 0.7);
+    transition: 0.5s;
+}
+#quemSomos .aceso h3 {
+    color: #fff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 5px rgba(255, 255, 255, 0.7);
+    overflow: visible;
+}
+#quemSomos .aceso p,
+#quemSomos .aceso a {
+    color: var(--amarelo1);
+}
 
 /*========= Footer =========*/
 footer {

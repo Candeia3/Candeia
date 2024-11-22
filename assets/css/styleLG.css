@@ -4,3 +4,39 @@
 nav ul {
     gap: 15px;
 }
+
+/* ========= Quem Somos ========= */
+#quemSomos {
+    display: flex;
+    flex-direction: row;
+}
+#quemSomos .membros {
+    width: 500px;
+}
+#quemSomos .membro {
+    margin-bottom: 140px;
+    gap: 0;
+}
+#quemSomos .membro div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+#quemSomos .cabos {
+    top: 408px;
+    gap: 185px;
+    width: 460px;
+    left: 25%;
+    transform: translateX(-50%);
+}
+#quemSomos .projeto {
+    width: 500px;
+    margin-bottom: 200px;
+}
+#quemSomos .projeto h2 {
+    margin: 0 0 100px;
+}
+#quemSomos .projeto img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -31,9 +31,9 @@ if (window.location.pathname.includes('index.html')) {
 
     function primeiraVez() {
         if (localStorage.getItem("logado") == 'true' || sessionStorage.getItem("logado") == 'true') {
-            window.location.href = '../html/coleta.html';
+            window.location.href = '../../html/coleta.html';
         } else {
-            window.location.href = '../html/login_cadastro.html';
+            window.location.href = '../../html/login_cadastro.html';
         }
     }
 }
@@ -85,6 +85,64 @@ if (window.location.pathname.includes('login_cadastro.html')) {
 /* ========= Perfil ========= */
 if (window.location.pathname.includes('perfil.html')) {
     function trocarPontos() {
-        window.location.href = '../html/descontos.html';
+        window.location.href = '../../html/descontos.html';
     }
+}
+
+/* ========= Quem Somos ========= */
+/* animação de acender */
+if (window.location.pathname.includes('quemSomos.html')) {
+    /* selecionando os membros */
+    const bruno = document.getElementById("bruno");
+    const flavio = document.getElementById("flavio");
+    const vinicius = document.getElementById("vinicius");
+    /* selecionando os cabos para animação */
+    const caboBruno = document.getElementById("caboBruno");
+    const caboFlavio = document.getElementById("caboFlavio");
+    const caboVinicius = document.getElementById("caboVinicius");
+    /* selecionando logos do linkedin */
+    const linkedinBruno = document.getElementById("linkedinBruno");
+    const linkedinFlavio = document.getElementById("linkedinFlavio");
+    const linkedinVinicius = document.getElementById("linkedinVinicius");
+    /* selecionando logos github */
+    const githubBruno = document.getElementById("githubBruno");
+    const githubFlavio = document.getElementById("githubFlavio");
+    const githubVinicius = document.getElementById("githubVinicius");
+
+    bruno.addEventListener("mouseenter", () => {
+        bruno.classList.add("aceso");
+        caboBruno.src = '../assets/img/cabo_conectado.png';
+        linkedinBruno.src = '../assets/img/linkedin_logo_membros_acesa.png';
+        githubBruno.src = '../assets/img/github_logo_membros_acesa.png';
+    });
+    bruno.addEventListener("mouseleave", () => {
+        bruno.classList.remove("aceso");
+        caboBruno.src = '../assets/img/cabo_desconectado.png';
+        linkedinBruno.src = '../assets/img/linkedin_icone_membros.png';
+        githubBruno.src = '../assets/img/github_icone_membros.png';
+    });
+    flavio.addEventListener("mouseenter", () => {
+        flavio.classList.add("aceso");
+        caboFlavio.src = '../assets/img/cabo_conectado.png';
+        linkedinFlavio.src = '../assets/img/linkedin_logo_membros_acesa.png';
+        githubFlavio.src = '../assets/img/github_logo_membros_acesa.png';
+    });
+    flavio.addEventListener("mouseleave", () => {
+        flavio.classList.remove("aceso");
+        caboFlavio.src = '../assets/img/cabo_desconectado.png';
+        linkedinFlavio.src = '../assets/img/linkedin_icone_membros.png';
+        githubFlavio.src = '../assets/img/github_icone_membros.png';
+    });
+    vinicius.addEventListener("mouseenter", () => {
+        vinicius.classList.add("aceso");
+        caboVinicius.src = '../assets/img/cabo_conectado.png';
+        linkedinVinicius.src = '../assets/img/linkedin_logo_membros_acesa.png';
+        githubVinicius.src = '../assets/img/github_logo_membros_acesa.png';
+    });
+    vinicius.addEventListener("mouseleave", () => {
+        vinicius.classList.remove("aceso");
+        caboVinicius.src = '../assets/img/cabo_desconectado.png';
+        linkedinVinicius.src = '../assets/img/linkedin_icone_membros.png';
+        githubVinicius.src = '../assets/img/github_icone_membros.png';
+    });
 }
