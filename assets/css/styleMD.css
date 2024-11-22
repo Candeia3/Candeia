@@ -33,6 +33,14 @@
     display: block;
 }
 
+/* ========= Coleta ========= */
+.infoParceiro {
+    width: 600px;
+}
+.infoParceiro iframe {
+    display: block;
+}
+
 /* Redimensionando cabeçlho */
 @media (max-width: 800px) {
     nav ul {

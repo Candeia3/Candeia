@@ -75,7 +75,7 @@ nav ul li a {
 
 /* Corpo */
 body {
-    background-color: var(--cinza1)
+    background: linear-gradient(to bottom, var(--cinza1), var(--cinza2));
 }
 
 
@@ -477,7 +477,7 @@ body {
     border-radius: 10px;
     flex-direction: column;
     text-align: center;
-    width: 500px;
+    width: 300px;
 }
 .infoParceiro span {
     position: absolute;
@@ -489,6 +489,9 @@ body {
     transform: rotate(45deg);
     cursor: pointer;
     border-radius: 10px;
+}
+.infoParceiro iframe {
+    display: none;
 }
 .infoParceiro span:last-child { 
     transform: rotate(-45deg);
