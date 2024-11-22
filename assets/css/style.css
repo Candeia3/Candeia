@@ -293,11 +293,12 @@ body {
     text-decoration: underline;
     margin-bottom: 100px;
 }
-/* editar perfil */
+/* modal */
 #perfil .modal {
     display: none;
     background-color: rgba(10, 10, 10, 0.5);
     position: fixed;
+    top: 0;
     height: 100vh;
     width: 100%;
     z-index: 1;
@@ -449,6 +450,51 @@ body {
 #coleta span {
     color: var(--amarelo1);
     font-weight: 600;
+}
+#coleta .modal {
+    display: none;
+    background-color: rgba(10, 10, 10, 0.5);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+.infoParceiro {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    background-color: var(--cinza1);
+    color: white;
+    padding: 50px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+}
+.infoParceiro span {
+    position: absolute;
+    top: 20px; 
+    right: 10px;
+    width: 40px;
+    height: 6px; 
+    background-color: var(--cinza3);
+    transform: rotate(45deg);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.infoParceiro span:last-child { 
+    transform: rotate(-45deg);
+}
+.infoParceiro label:last-child {
+    text-decoration: underline;
+    color: var(--amarelo1);
+    margin-top: 20px
+}
+#infoParceiro:checked ~ .modal {
+    display: flex;
 }
 
 
