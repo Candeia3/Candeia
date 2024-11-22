@@ -24,6 +24,12 @@ nav ul {
     left: calc(50% - 10%);
 }
 
+/* ========= Coleta ========= */
+#coleta .parceiros {
+    display: flex;
+    margin: 100px auto;
+}
+
 /* ========= Quem Somos ========= */
 #quemSomos {
     display: flex;
