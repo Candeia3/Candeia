@@ -6,7 +6,7 @@ nav {
     display: none;
 }
 nav ul {
-    position: absolute;
+    position: fixed;
     height: 100vh;
     background-color: var(--cinza3);
     display: block;
@@ -36,11 +36,11 @@ nav span:last-child {
     display: block;
     background-color: var(--cinza2);
     border-bottom: var(--cinza1) solid 2px;
+    text-align: center;
 }
 .img_menu > img {
     width: 150px;
     height: auto;
-    padding: 10px 50px;
 }
 header nav ul li {
     padding: 10px 50px;
