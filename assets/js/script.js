@@ -49,6 +49,7 @@ if (window.location.pathname.includes('login_cadastro.html')) {
     const loginParseiro = document.getElementById("login_parseiro");
     const cadastroConsumidor = document.getElementById("cadastro_consumidor");
     const cadastroParseiro = document.getElementById("cadastro_parseiro");
+    const btn = document.getElementById("btn");
 
     // Função para atualizar a exibição com base no estado atual
     function atualizarVisibilidade() {
@@ -62,14 +63,18 @@ if (window.location.pathname.includes('login_cadastro.html')) {
         if (tipoUsuario.checked) {
             if (tipoSessao.checked) {
                 cadastroParseiro.classList.remove("hidden");
+                btn.innerText = "Cadastrar";
             } else {
                 loginParseiro.classList.remove("hidden");
+                btn.innerText = "Logar";
             }
         } else {
             if (tipoSessao.checked) {
                 cadastroConsumidor.classList.remove("hidden");
+                btn.innerText = "Cadastrar";
             } else {
                 loginConsumidor.classList.remove("hidden");
+                btn.innerText = "Logar";
             }
         }
     }

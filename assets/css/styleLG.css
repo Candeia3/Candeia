@@ -24,6 +24,36 @@ nav ul {
     left: calc(50% - 10%);
 }
 
+/* ========= login_cadastro ========= */
+#login_cadastro {
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+}
+#login_cadastro .logologin,
+#login_cadastro form {
+    margin: 0;
+    width: 500px;
+    height: 650px;
+    border-radius: 0;
+}
+#login_cadastro .logologin {
+    display: flex;
+    align-items: center;
+    background-color: var(--cinza1);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#login_cadastro .logologin img {
+    width: auto;
+    height: 30%;
+}
+#login_cadastro form {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 /* ========= Perfil ========= */
 #perfil {
     display: flex;
