@@ -534,6 +534,42 @@ body {
 }
 
 
+/* ========= Quem Somos ========= */
+#quemSomos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0;
+}
+#quemSomos .membros h1 {
+    font-size: 35px;
+    color: var(--verde1);
+}
+#quemSomos .membros h2 {
+    font-size: 30px;
+    color: var(--verde1);
+    margin-bottom: 50px;
+}
+#quemSomos .membro {
+    display: flex;
+    gap: 50px;
+}
+#quemSomos .cabos {
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+    position: absolute;
+    top: 420px;
+    width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#quemSomos .cabos div, 
+#quemSomos .cabos img:first-child {
+    width: 90%;
+}
+
+
 /*========= Footer =========*/
 footer {
     background-color: var(--cinza2);
