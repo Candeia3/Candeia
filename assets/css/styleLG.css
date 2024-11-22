@@ -5,6 +5,25 @@ nav ul {
     gap: 15px;
 }
 
+/* ========= Home Page ========= */
+#home {
+    flex-direction: row;
+    padding: 300px;
+}
+#home button {
+    height: 80px;
+    position: absolute;
+    right: 24%;
+}
+#home #rotacao {
+    position: absolute;
+    left: 24%;
+}
+#gota_animada {
+    top: 480px;
+    left: calc(50% - 10%);
+}
+
 /* ========= Quem Somos ========= */
 #quemSomos {
     display: flex;
