@@ -24,6 +24,26 @@ nav ul {
     left: calc(50% - 10%);
 }
 
+/* ========= Perfil ========= */
+#perfil {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    background-color: var(--cinza2);
+    border-radius: 10px;
+}
+#perfil .container2 {
+    border-left: 5px solid var(--cinza1);
+}
+#perfil .container1,
+#perfil .container2 {
+    width: 50%;
+}
+#perfil .container1 img {
+    top: 300px;
+    left: calc(50% - 27%);
+}
+
 /* ========= Coleta ========= */
 #coleta .parceiros {
     display: flex;
