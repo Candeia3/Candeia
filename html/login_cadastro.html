@@ -208,6 +208,8 @@
 <!-- Script local para não quebrar no github pages -->
 <script>
     /* Validação de usuário */
+    const tipoUsuario = document.getElementById("consu_parse");
+    const tipoSessao = document.getElementById("log_cad");
     var erro = document.getElementById('erro');
     var manterLogado = document.getElementById('manter_logado');
     if (sessionStorage.getItem('msgErro') == '1') {
